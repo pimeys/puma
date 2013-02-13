@@ -1,0 +1,22 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    hoe (3.5.0)
+      rake (>= 0.8, < 11.0)
+    json (1.7.7)
+    rack (1.5.2)
+    rake (10.0.3)
+    rake-compiler (0.8.2)
+      rake
+    rdoc (3.12.1)
+      json (~> 1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hoe
+  jruby-openssl
+  rack
+  rake-compiler
+  rdoc
