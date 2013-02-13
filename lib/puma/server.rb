@@ -264,7 +264,7 @@ module Puma
         @reactor.clear! if @status == :restart
 
         @reactor.shutdown
-        graceful_shutdown if @status == :stop
+        graceful_shutdown if @status == :stop || @status == :restart
       ensure
         unless @status == :restart
           @ios.each { |i| i.close }
